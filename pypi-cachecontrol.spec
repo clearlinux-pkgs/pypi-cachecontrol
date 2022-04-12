@@ -4,7 +4,7 @@
 #
 Name     : pypi-cachecontrol
 Version  : 0.12.10
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/d0/74/3748ee1144234a525d84c4905002a5f39795d265bcdecca74142a8df5206/CacheControl-0.12.10.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d0/74/3748ee1144234a525d84c4905002a5f39795d265bcdecca74142a8df5206/CacheControl-0.12.10.tar.gz
 Summary  : httplib2 caching for requests
@@ -16,9 +16,6 @@ Requires: pypi-cachecontrol-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(msgpack)
 BuildRequires : pypi(requests)
-Provides: CacheControl
-Provides: CacheControl-python
-Provides: CacheControl-python3
 
 %description
 ..
@@ -65,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641421586
+export SOURCE_DATE_EPOCH=1649723891
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
