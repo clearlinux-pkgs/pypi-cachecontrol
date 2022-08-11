@@ -4,7 +4,7 @@
 #
 Name     : pypi-cachecontrol
 Version  : 0.12.11
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/46/9b/34215200b0c2b2229d7be45c1436ca0e8cad3b10de42cfea96983bd70248/CacheControl-0.12.11.tar.gz
 Source0  : https://files.pythonhosted.org/packages/46/9b/34215200b0c2b2229d7be45c1436ca0e8cad3b10de42cfea96983bd70248/CacheControl-0.12.11.tar.gz
 Summary  : httplib2 caching for requests
