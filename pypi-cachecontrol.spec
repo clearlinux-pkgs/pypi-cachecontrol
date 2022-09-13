@@ -4,7 +4,7 @@
 #
 Name     : pypi-cachecontrol
 Version  : 0.12.12
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/06/80/1f8ba1ced5f29514d8621003b2b0fb404ed88996e963dbca7f519ecc82ca/CacheControl-0.12.12.tar.gz
 Source0  : https://files.pythonhosted.org/packages/06/80/1f8ba1ced5f29514d8621003b2b0fb404ed88996e963dbca7f519ecc82ca/CacheControl-0.12.12.tar.gz
 Summary  : httplib2 caching for requests
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1663025965
+export SOURCE_DATE_EPOCH=1663075089
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -115,6 +115,9 @@ python3 -tt setup.py build install --root=%{buildroot}-v3
 popd
 ## Remove excluded files
 rm -f %{buildroot}*/usr/lib/python3*/site-packages/tests/*/*
+## install_append content
+rm -rf %{buildroot}/usr/lib/python*/site-packages/tests/
+## install_append end
 /usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
